@@ -5,4 +5,347 @@
           box-sizing: border-box;
   font-size: 16px;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.container {
+  position: relative;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #433960;
+  width: 100%;
+  padding: 1rem 6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 10;
+}
+
+.header__link {
+  text-decoration: none;
+  font-size: 2rem;
+  font-family: "DM Serif Display", serif;
+  color: white;
+  letter-spacing: 2px;
+}
+
+.header__mobile {
+  display: none;
+}
+
+.header__navigation ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__navigation ul li {
+  list-style: none;
+  margin-left: 1.5rem;
+}
+
+.header__navigation ul li a {
+  text-decoration: none;
+  color: white;
+  font-family: "DM Serif Display", serif;
+  -webkit-transition: .35s ease;
+  transition: .35s ease;
+}
+
+.header__navigation ul li a:hover, .header__navigation ul li a:focus {
+  color: #cccccc;
+}
+
+.mobile {
+  display: none;
+}
+
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(45, 38, 64, 0.459))), url("../images/hero-bg-desktop.jpg");
+  background-image: linear-gradient(to bottom, rgba(45, 38, 64, 0.459)), url("../images/hero-bg-desktop.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero__title {
+  font-size: 3rem;
+  font-family: "DM Serif Display", serif;
+  letter-spacing: 2px;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.hero__link {
+  text-decoration: none;
+  padding: .5rem 1rem;
+  border: 1px solid #2d2640;
+  color: white;
+  background: #2d2640;
+  text-transform: uppercase;
+  font-family: "Karla", sans-serif;
+  -webkit-transition: .5 ease-in;
+  transition: .5 ease-in;
+}
+
+.hero__link:hover {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
+.about {
+  padding: 2rem 6rem;
+}
+
+.about__heading {
+  font-size: 2.5rem;
+  margin-bottom: 2.5rem;
+  text-align: center;
+  font-family: "DM Serif Display", serif;
+  color: #2d2640;
+}
+
+.about__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.about__block-image1, .about__block-text1, .about__block-text2, .about__block-image2 {
+  -ms-flex-preferred-size: 45%;
+      flex-basis: 45%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 25rem;
+  margin-bottom: 4rem;
+}
+
+.about__block-image1 p, .about__block-text1 p, .about__block-text2 p, .about__block-image2 p {
+  font-size: 1.25rem;
+  font-family: "Karla", sans-serif;
+  line-height: 1.5;
+}
+
+.about__block-image1 img, .about__block-text1 img, .about__block-text2 img, .about__block-image2 img {
+  width: 100%;
+  height: 100%;
+}
+
+.about__block-image1 {
+  -ms-flex-preferred-size: 55%;
+      flex-basis: 55%;
+  -webkit-transform: translateX(-8rem);
+          transform: translateX(-8rem);
+}
+
+.contact {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(45, 38, 64, 0.377))), url("../images/contact-bg-desktop.jpg");
+  background-image: linear-gradient(to bottom, rgba(45, 38, 64, 0.377)), url("../images/contact-bg-desktop.jpg");
+  background-position: center;
+  background-size: cover;
+  padding: 3rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact__heading {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  text-align: center;
+  font-family: "DM Serif Display", serif;
+  color: white;
+}
+
+.contact__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 1rem;
+  background: white;
+}
+
+.contact__form--name, .contact__form--email, .contact__form--message {
+  padding: .5rem;
+  font-size: .9rem;
+  width: 100%;
+  margin-bottom: 1rem;
+  border: 1px solid #2d2640;
+  color: #2d2640;
+  outline: none;
+  font-family: "Karla", sans-serif;
+}
+
+.contact__form--name::-webkit-input-placeholder, .contact__form--email::-webkit-input-placeholder, .contact__form--message::-webkit-input-placeholder {
+  color: #2d2640;
+  font-family: "Karla", sans-serif;
+}
+
+.contact__form--name:-ms-input-placeholder, .contact__form--email:-ms-input-placeholder, .contact__form--message:-ms-input-placeholder {
+  color: #2d2640;
+  font-family: "Karla", sans-serif;
+}
+
+.contact__form--name::-ms-input-placeholder, .contact__form--email::-ms-input-placeholder, .contact__form--message::-ms-input-placeholder {
+  color: #2d2640;
+  font-family: "Karla", sans-serif;
+}
+
+.contact__form--name::placeholder, .contact__form--email::placeholder, .contact__form--message::placeholder {
+  color: #2d2640;
+  font-family: "Karla", sans-serif;
+}
+
+.contact__form--btn {
+  padding: .5rem 1.5rem;
+  color: white;
+  outline: none;
+  border: 1px solid #2d2640;
+  background: #2d2640;
+  font-family: "Karla", sans-serif;
+  cursor: pointer;
+  display: block;
+  margin: 0 0 0 auto;
+  -webkit-transition: .35s;
+  transition: .35s;
+}
+
+.contact__form--btn:hover {
+  background: #433960;
+}
+
+.footer {
+  padding: 2rem 6rem;
+  background: #2d2640;
+  color: white;
+}
+
+.footer .company {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer .company__information p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: .7rem;
+  font-family: "Karla", sans-serif;
+}
+
+.footer .company__information p img {
+  margin-right: .5rem;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+.footer .company__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer .company__links ul {
+  margin-right: 1.2rem;
+}
+
+.footer .company__links ul li {
+  list-style: none;
+  margin-bottom: .8rem;
+}
+
+.footer .company__links ul li a {
+  text-decoration: none;
+  color: white;
+  font-family: "Karla", sans-serif;
+  -webkit-transition: .35s;
+  transition: .35s;
+}
+
+.footer .company__links ul li a:hover, .footer .company__links ul li a:focus {
+  color: #cccccc;
+}
+
+.footer hr {
+  margin: 1rem 0;
+}
+
+.footer__copyright {
+  text-align: center;
+  font-family: "Karla", sans-serif;
+}
 /*# sourceMappingURL=style.css.map */
