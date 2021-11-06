@@ -1,0 +1,29 @@
+// Variables
+
+$primary-color: rgb(255, 255, 255);
+$secondary-color: hsl(256, 26%, 20%);
+$primary-font: 'DM Serif Display', serif;
+$secondary-font: 'Karla', sans-serif;
+
+// Global styles
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.container{
+    position: relative;
+}
+
+// Mixin to center content in a div
+
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
