@@ -68,6 +68,7 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    padding: 0 6rem;
 
     &__title{
         font-size: 3rem;
@@ -75,6 +76,7 @@
         letter-spacing: 2px;
         color: $primary-color;
         margin-bottom: 1rem;
+        text-align: center;
     }
 
     &__link{
@@ -258,3 +260,7 @@
         font-family: $secondary-font;
     }
 }
+
+@import 'tablets';
+
+@import 'mobile';

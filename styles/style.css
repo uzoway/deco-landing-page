@@ -96,6 +96,7 @@ body {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  padding: 0 6rem;
 }
 
 .hero__title {
@@ -104,6 +105,7 @@ body {
   letter-spacing: 2px;
   color: white;
   margin-bottom: 1rem;
+  text-align: center;
 }
 
 .hero__link {
@@ -347,5 +349,178 @@ body {
 .footer__copyright {
   text-align: center;
   font-family: "Karla", sans-serif;
+}
+
+@media (max-width: 706px) {
+  .header {
+    padding: 1rem 3rem;
+  }
+  .about {
+    padding: 2rem 3rem;
+  }
+  .about .about__block-image1 {
+    -webkit-transform: translateX(-4rem);
+    transform: translateX(-4rem);
+  }
+  .about .about__block-image1 .about__block-image1 p,
+  .about .about__block-image1 .about__block-text1 p,
+  .about .about__block-image1 .about__block-text2 p,
+  .about .about__block-image1 .about__block-image2 p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .about__block-image1 p,
+  .about__block-text1 p,
+  .about__block-text2 p,
+  .about__block-image2 p {
+    font-size: 1rem;
+  }
+  .footer .company__information p {
+    font-size: .9rem;
+  }
+  .footer .company__links ul li a {
+    font-size: .9rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .header {
+    padding: .5rem 1.5rem;
+  }
+  .header__link {
+    font-size: 1.7rem;
+  }
+  .header__navigation {
+    display: none;
+  }
+  .header__mobile {
+    display: block;
+    width: 1.7rem;
+  }
+  .hero {
+    padding: 1.5rem;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(45, 38, 64, 0.459))), url("../images/hero-bg-mobile.jpg");
+    background-image: linear-gradient(to bottom, rgba(45, 38, 64, 0.459)), url("../images/hero-bg-mobile.jpg");
+  }
+  .hero__title {
+    font-size: 2rem;
+  }
+  .about {
+    padding: 1rem 1.5rem;
+  }
+  .about__heading {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  .about__block-image1, .about__block-image2, .about__block-text1, .about__block-text2 {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    height: 13rem;
+    margin-bottom: 1rem;
+  }
+  .about .about .about__block-image1 {
+    -webkit-transform: translateX(-2rem);
+            transform: translateX(-2rem);
+  }
+  .about__block-text1, .about__block-text2 {
+    height: 10rem;
+    text-align: center;
+  }
+  .about__block-image2 {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  .about__block-text2 {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+  }
+  .contact {
+    padding: 1rem 1.5rem;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(45, 38, 64, 0.377))), url("../images/contact-bg-mobile.jpg");
+    background-image: linear-gradient(to bottom, rgba(45, 38, 64, 0.377)), url("../images/contact-bg-mobile.jpg");
+  }
+  .contact__heading {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  .footer {
+    padding: 1rem 1.5rem;
+  }
+  .footer .company {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer .company__links {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 1rem;
+  }
+  .mobile {
+    display: block;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    background: #2d2640;
+    width: 100%;
+    z-index: 9;
+  }
+  .mobile__navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+  }
+  .mobile__navigation li {
+    list-style: none;
+    margin: 1rem 0;
+  }
+  .mobile__navigation li a {
+    text-decoration: none;
+    color: white;
+    font-family: "Karla", sans-serif;
+    font-size: 1.5rem;
+  }
+  .mobile__navigation li a:hover {
+    color: #cccccc;
+  }
+}
+
+@media (max-width: 321px) {
+  .hero__title {
+    font-size: 1.8rem;
+  }
+  .about__heading {
+    font-size: 1.6rem;
+  }
+  .about__block-image1 p,
+  .about__block-text1 p,
+  .about__block-text2 p,
+  .about__block-image2 p {
+    font-size: .9rem;
+  }
+  .contact__heading {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 298px) {
+  .hero__title {
+    font-size: 1.6rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
