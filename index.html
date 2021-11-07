@@ -79,9 +79,9 @@
             <h3 class="contact__heading">Contact Us</h3>
 
             <form action="#" autocomplete="off" class="contact__form" id="form">
-                <input type="text" placeholder="Full Name" id="name" class="contact__form contact__form--name">
-                <input type="email" name="email" id="email" placeholder="Email address" class="contact__form contact__form--email">
-                <textarea name="message" id="message" cols="30" rows="10" placeholder="Message" class="contact__form contact__form--message"></textarea>
+                <input type="text" required placeholder="Full Name" id="name" class="contact__form contact__form--name">
+                <input type="email" required name="email" id="email" placeholder="Email address" class="contact__form contact__form--email">
+                <textarea name="message" required id="message" cols="30" rows="10" placeholder="Message" class="contact__form contact__form--message"></textarea>
                 <button type="submit" class="contact__form contact__form--btn">Submit</button>
             </form>
         </div>
@@ -121,5 +121,7 @@
             <p class="footer__copyright">&copy; Copyright Uzochukwu Okafor</p>
         </footer>
     </div>
+
+    <script src="./script/index.js"></script>
 </body>
 </html>
