@@ -471,6 +471,41 @@ body {
     background: #2d2640;
     width: 100%;
     z-index: 9;
+    -webkit-transition: 1.5s;
+    transition: 1.5s;
+  }
+  .mobile.active {
+    left: 0;
+    -webkit-animation: bounce 1.5s;
+            animation: bounce 1.5s;
+  }
+  @-webkit-keyframes bounce {
+    0% {
+      left: -100%;
+    }
+    50% {
+      left: 0;
+    }
+    75% {
+      left: -20%;
+    }
+    100% {
+      left: 0;
+    }
+  }
+  @keyframes bounce {
+    0% {
+      left: -100%;
+    }
+    50% {
+      left: 0;
+    }
+    75% {
+      left: -20%;
+    }
+    100% {
+      left: 0;
+    }
   }
   .mobile__navigation {
     display: -webkit-box;

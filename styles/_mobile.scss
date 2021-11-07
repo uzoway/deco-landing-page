@@ -93,6 +93,27 @@
         background: $secondary-color;
         width: 100%;
         z-index: 9;
+        transition: 1.5s;
+
+        &.active{
+            left: 0;
+            animation: bounce 1.5s;
+
+            @keyframes bounce{
+                0%{
+                    left: -100%;
+                }
+                50%{
+                    left: 0;
+                }
+                75%{
+                    left: -20%;
+                }
+                100%{
+                    left: 0;
+                }
+            }
+        }
 
         &__navigation{
             display: flex;
