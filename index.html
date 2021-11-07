@@ -21,7 +21,7 @@
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Shop</a></li>
                     <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
             <img class="header__mobile" src="images/icon-hamburger.svg" alt="hamburger icon" id="hamburger">
@@ -78,8 +78,8 @@
         <div class="contact" id="contact">
             <h3 class="contact__heading">Contact Us</h3>
 
-            <form action="#" autocomplete="off" class="contact__form">
-                <input type="text" placeholder="Full Name" class="contact__form contact__form--name">
+            <form action="#" autocomplete="off" class="contact__form" id="form">
+                <input type="text" placeholder="Full Name" id="name" class="contact__form contact__form--name">
                 <input type="email" name="email" id="email" placeholder="Email address" class="contact__form contact__form--email">
                 <textarea name="message" id="message" cols="30" rows="10" placeholder="Message" class="contact__form contact__form--message"></textarea>
                 <button type="submit" class="contact__form contact__form--btn">Submit</button>
