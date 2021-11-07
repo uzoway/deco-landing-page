@@ -351,7 +351,7 @@ body {
   font-family: "Karla", sans-serif;
 }
 
-@media (max-width: 706px) {
+@media (max-width: 706px){
   .header {
     padding: 1rem 3rem;
   }
@@ -370,7 +370,7 @@ body {
   }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 650px){
   .about__block-image1 p,
   .about__block-text1 p,
   .about__block-text2 p,
@@ -385,7 +385,7 @@ body {
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 375px){
   .header {
     padding: .5rem 1.5rem;
   }
@@ -535,7 +535,7 @@ body {
   }
 }
 
-@media (max-width: 321px) {
+@media (max-width: 321px){
   .hero__title {
     font-size: 1.8rem;
   }
@@ -553,7 +553,7 @@ body {
   }
 }
 
-@media (max-width: 298px) {
+@media (max-width: 298px){
   .hero__title {
     font-size: 1.6rem;
   }
