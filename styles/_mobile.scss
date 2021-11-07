@@ -1,4 +1,4 @@
-@media (max-width: 375px){
+@media screen and (max-width: 375px){
     .header{
         padding: .5rem 1.5rem;
 
@@ -141,7 +141,7 @@
     }
 }
 
-@media (max-width: 321px){
+@media screen and (max-width: 321px){
     .hero__title{
         font-size: 1.8rem;
     }
@@ -162,7 +162,7 @@
     }
 }
 
-@media (max-width: 298px){
+@media screen and (max-width: 298px){
     .hero__title{
         font-size: 1.6rem;
     }
