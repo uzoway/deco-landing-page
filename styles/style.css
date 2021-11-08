@@ -385,7 +385,7 @@ body {
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 414px) {
   .header {
     padding: .5rem 1.5rem;
   }
